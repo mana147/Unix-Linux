@@ -2,7 +2,7 @@
 Unix/Linux (Tutorial / example / code / demo / ... )
 
 GCC -v // kiểm tra phiên bản 
-----------------------------
+```
 GCC compilation process (quá trình biên dịch 1 file C)
 
 Source code (.c .cpp .h ) // tiền xử lý
@@ -14,7 +14,7 @@ Assemble Code (.s)
 Machine Code (.o .obj)
     Static Libray -> step 4: Linker (ld)
     -> Executable Machine Code (.exe)
-----------------------------
+```
 GCC name_file.c // biên dịch bằng GCC  
                 // nếu sử dụng linux -> a.out
                 // nễu sử dụng MINGW32 -> a.exe
@@ -29,4 +29,3 @@ GCC -E -o name_file_out.i name_file.c
                 // tạo ra file.i từ file.c
 
 GCC -S name_file.i -o name_file_out.s
-------------------------------
