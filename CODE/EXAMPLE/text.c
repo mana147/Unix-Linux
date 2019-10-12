@@ -2,8 +2,10 @@
 
 int main()
 {
-   /* Day la chuong trinh C dau tien */
-   printf("Hello, World! \n");
+   for (int i = 0; i < 10; i++)
+   {
+      printf("Hello, World! \n");
+   }
    
    return 0;
 }
