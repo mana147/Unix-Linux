@@ -3,7 +3,6 @@ Unix/Linux (Tutorial / example / code / demo / ... )
 
 compilation process multi files and parameter in program
 
-GCC -v // kiểm tra phiên bản 
 ```
 GCC compilation process (quá trình biên dịch 1 file C)
 
@@ -17,6 +16,9 @@ Machine Code (.o .obj)
     Static Libray -> step 4: Linker (ld)
     -> Executable Machine Code (.exe)
 ```
+
+GCC -v // kiểm tra phiên bản 
+
 GCC name_file.c // biên dịch bằng GCC  
                 // nếu sử dụng linux -> a.out
                 // nễu sử dụng MINGW32 -> a.exe
