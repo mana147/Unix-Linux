@@ -17,8 +17,10 @@ Machine Code (.o .obj)
     -> Executable Machine Code (.exe)
 ```
 
-gcc -v // kiểm tra phiên bản 
-
+ - kiểm tra phiên bản 
+```bash
+gcc -v 
+``` 
 gcc name_file.c  biên dịch bằng GCC  
                 // nếu sử dụng linux -> a.out
                 // nễu sử dụng MINGW32 -> a.exe
