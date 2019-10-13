@@ -1,12 +1,12 @@
 # Unix-Linux
-Unix/Linux (Tutorial / example / code / demo / ... )
+TODO : Unix/Linux (Tutorial / example / code / demo / ... )
 
-compilation process multi files and parameter in program
+### compilation process multi files and parameter in program
 
 ```
-GCC compilation process (quá trình biên dịch 1 file C)
+GCC compilation process 
 
-Source code (.c .cpp .h ) // tiền xử lý
+Source code (.c .cpp .h ) 
     -> step 1: Perprocessing (C/C++)
 Include Header , Expand Macro (.i .ii)
     -> step 2: Compilation (gcc , g++)
@@ -17,21 +17,29 @@ Machine Code (.o .obj)
     -> Executable Machine Code (.exe)
 ```
 
-GCC -v // kiểm tra phiên bản 
+ - kiểm tra phiên bản 
+```bash
+gcc --version
+```
+ - biên dịch bằng GCC 
+   if use linux -> a.out
+   if use MINGW32 -> a.exe
+```bash 
+gcc name_file.c
+```
 
-GCC name_file.c // biên dịch bằng GCC  
-                // nếu sử dụng linux -> a.out
-                // nễu sử dụng MINGW32 -> a.exe
+ - biên dịch ra tên name_file mong muốn
+```bash
+gcc name_file.c -o name_file_out
+```
+ - tạo ra file nhị phân obj 
+```bash
+gcc -c name_file.c 
+```
 
-GCC -o name_file_out name_file.c
-                //  biên dịch ra tên name_file mong muốn
-
-GCC -c name_file.c 
-                // tạo ra file nhị phân obj 
-
-GCC -E -o name_file_out.i name_file.c
+gcc -E -o name_file_out.i name_file.c
                 // tạo ra file.i từ file.c
 
-GCC -S name_file.i -o name_file_out.s
+gcc -S name_file.i -o name_file_out.s
 
 
