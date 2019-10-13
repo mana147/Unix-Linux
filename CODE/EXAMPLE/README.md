@@ -1,6 +1,8 @@
 # Unix-Linux
 Unix/Linux (Tutorial / example / code / demo / ... )
 
+compilation process multi files and parameter in program
+
 GCC -v // kiểm tra phiên bản 
 ```
 GCC compilation process (quá trình biên dịch 1 file C)
@@ -29,3 +31,5 @@ GCC -E -o name_file_out.i name_file.c
                 // tạo ra file.i từ file.c
 
 GCC -S name_file.i -o name_file_out.s
+
+
