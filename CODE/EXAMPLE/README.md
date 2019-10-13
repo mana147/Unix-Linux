@@ -21,6 +21,7 @@ Machine Code (.o .obj)
 ```bash
 gcc -v 
 ``` 
+```bash 
 gcc name_file.c  biên dịch bằng GCC  
                 // nếu sử dụng linux -> a.out
                 // nễu sử dụng MINGW32 -> a.exe
