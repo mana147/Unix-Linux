@@ -21,14 +21,14 @@ Machine Code (.o .obj)
 ```bash
 gcc --version
 ```
--------------------------------------
+
  - biên dịch bằng GCC 
  - if use linux -> a.out
  - if use MINGW32 -> a.exe
 ```bash 
 gcc name_file.c
 ```
--------------------------------------
+
  - biên dịch ra tên name_file mong muốn
 ```bash
 gcc name_file.c -o name_file
