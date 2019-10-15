@@ -2,6 +2,8 @@
 
 TODO : Unix/Linux (Tutorial / example / code / demo / ... )
 
+![alt text](https://github.com/mana147/Unix-Linux/blob/master/DOCUMENTS/Complie.png)
+
 ### compilation process multi files and parameter in program
 ---------------------------------------------------------------
 ### GCC compilation process 
@@ -11,9 +13,11 @@ TODO : Unix/Linux (Tutorial / example / code / demo / ... )
 -> step 2: Compilation (gcc , g++)
 #### Assemble Code (.s)
 -> step 3: Assemble (as)
-#### Machine Code (.o .obj)
-Static Libray (.lib .a) -> step 4: Linker (ld)
+#### Machine Code (.o .obj) 
+#### Static Libray (.lib .a) 
+-> step 4: Linker (ld)
 -> Executable Machine Code (.exe)
+
 ---------------------------------------------------------------
  - kiểm tra phiên bản 
 ```bash
@@ -63,6 +67,3 @@ as file.s -o file.o
  ```bash
  gcc file.o -o file.out 
  ```
-
-
-![advert](DOCUMENTS/Complie.png)
