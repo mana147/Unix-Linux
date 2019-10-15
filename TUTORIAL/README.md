@@ -1,11 +1,12 @@
-# Unix-Linux
+# Từ GCC đến Make files ...
 
-TODO : Unix/Linux (Tutorial / example / code / demo / ... )
+note : hướng dẫn biên dịch giải thích quá trình biên dịch Source code 
 
 ![alt text](https://github.com/mana147/Unix-Linux/blob/master/DOCUMENTS/Complie.png)
 
-### compilation process multi files and parameter in program
----------------------------------------------------------------
+---------------------------------------------------------------------
+
+## Compilation process multi files and parameter in program
 ### GCC compilation process 
 #### Source code (.c .cpp .h ) 
 -> step 1: Perprocessing (C/C++
@@ -18,26 +19,8 @@ TODO : Unix/Linux (Tutorial / example / code / demo / ... )
 -> step 4: Linker (ld)
 -> Executable Machine Code (.exe)
 
----------------------------------------------------------------
- - kiểm tra phiên bản 
-```bash
-gcc --version
-```
- - biên dịch bằng GCC 
- - if use linux -> a.out
- - if use MINGW32 -> a.exe
-```bash 
-gcc file.c
-```
- - biên dịch ra tên name_file mong muốn
-```bash
-gcc file.c -o file
-```
- - tạo ra file nhị phân obj 
-```bash
-gcc -c file.c 
-```
 -----------------------------------------------------------------
+
 ## Các bước tuần tự biên dịch source code bằng gcc
 
  - biên dich file.c ra file.i 
@@ -67,3 +50,25 @@ as file.s -o file.o
  ```bash
  gcc file.o -o file.out 
  ```
+
+---------------------------------------------------------------
+## Lệnh và option 
+
+ - kiểm tra phiên bản 
+```bash
+gcc --version
+```
+ - biên dịch bằng GCC 
+ - if use linux -> a.out
+ - if use MINGW32 -> a.exe
+```bash 
+gcc file.c
+```
+ - biên dịch ra tên name_file mong muốn
+```bash
+gcc file.c -o file
+```
+ - tạo ra file nhị phân obj 
+```bash
+gcc -c file.c 
+```
