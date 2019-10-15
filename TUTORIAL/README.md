@@ -28,6 +28,7 @@ note : hướng dẫn biên dịch giải thích quá trình biên dịch Source
  - quy ước c.i và c++.ii 
 ```bash  
 cpp file.c > file.i 
+or
 gcc -E file.c -o file.i
 ```
 
@@ -42,13 +43,12 @@ as file.s -o file.o
 ```
 
  - sử dụng ld.exe liên kết các files đối tượng và thư viện tạo ra file có thể chạy đc 
- ```bash
- ld -o hello.exe hello.o ...libraries...
- ```
-
+ - quá trình linker tương đối phức tạp , do đó GCC thực hiện toàn bộ quá trình thay chúng ta dưới 1 câu lệnh
  - sử dụng gcc liên kết các files đối tượng và biến dịch ra file thực thi 
  ```bash
- gcc file.o -o file.out 
+ld hello.o ...libraries... -o hello.exe 
+or
+gcc flie.o -o file.out
  ```
 
 ---------------------------------------------------------------
