@@ -3,17 +3,18 @@
 TODO : Unix/Linux (Tutorial / example / code / demo / ... )
 
 ### compilation process multi files and parameter in program
+---------------------------------------------------------------
 
 ### GCC compilation process 
 
-Source code (.c .cpp .h ) 
+#### Source code (.c .cpp .h ) 
 -> step 1: Perprocessing (C/C++)
-Include Header , Expand Macro (.i .ii)
+#### Include Header , Expand Macro (.i .ii)
 -> step 2: Compilation (gcc , g++)
-Assemble Code (.s)
+#### Assemble Code (.s)
 -> step 3: Assemble (as)
-Machine Code (.o .obj)
-Static Libray -> step 4: Linker (ld)
+#### Machine Code (.o .obj)
+#### Static Libray -> step 4: Linker (ld)
 -> Executable Machine Code (.exe)
 
 ---------------------------------------------------------------
