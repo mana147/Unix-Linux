@@ -2,6 +2,6 @@
 
 int main ()
 {
-	puts ("file test text GCC compilation process .... \n ");
+	printf ("file test text GCC compilation process .... \n ");
 	return 0 ;
 }
