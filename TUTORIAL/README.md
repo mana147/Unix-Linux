@@ -1,10 +1,8 @@
 # Từ GCC đến Make files ...
 
-note : hướng dẫn biên dịch giải thích quá trình biên dịch Source code 
+note : hướng dẫn biên dịch và giải thích quá trình biên dịch Source code 
 
 ![alt text](https://github.com/mana147/Unix-Linux/blob/master/DOCUMENTS/Complie.png)
-
----------------------------------------------------------------------
 
 ## Compilation process multi files and parameter in program
 ### GCC compilation process 
@@ -20,7 +18,6 @@ note : hướng dẫn biên dịch giải thích quá trình biên dịch Source
 -> Executable Machine Code (.exe)
 
 -----------------------------------------------------------------
-
 ## Các bước tuần tự biên dịch source code bằng gcc
 
  - biên dich file.c ra file.i 
@@ -45,30 +42,23 @@ as file.s -o file.o
  - sử dụng ld.exe liên kết các files đối tượng và thư viện tạo ra file có thể chạy đc 
  - quá trình linker tương đối phức tạp , do đó GCC thực hiện toàn bộ quá trình thay chúng ta dưới 1 câu lệnh
  - sử dụng gcc liên kết các files đối tượng và biến dịch ra file thực thi 
- ```bash
+```bash
 ld hello.o ...libraries... -o hello.exe 
 or
 gcc flie.o -o file.out
- ```
+```
 
 ---------------------------------------------------------------
-## Lệnh và option 
+## Các bước biên dịch bằng gcc rút gọn quá trình cho multi file.c
 
- - kiểm tra phiên bản 
+ - biên dịch thằng từ file.c ra file.o 
+ - tại đây gcc sẽ tự động sử dụng cpp + as để đưa ra file.o
 ```bash
-gcc --version
+gcc -c main.c
+gcc -c lib.c
 ```
- - biên dịch bằng GCC 
- - if use linux -> a.out
- - if use MINGW32 -> a.exe
-```bash 
-gcc file.c
-```
- - biên dịch ra tên name_file mong muốn
+ - tạo file thực thi từ nhiều files.o
+ - tại bước này gcc sẽ tự động link các files.o lại với nhau và đưa ra files thực thi 
 ```bash
-gcc file.c -o file
-```
- - tạo ra file nhị phân obj 
-```bash
-gcc -c file.c 
+gcc main.o lib.o -o main.out 
 ```
