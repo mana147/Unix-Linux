@@ -41,7 +41,7 @@ as file.s -o file.o
 
  - sử dụng ld.exe liên kết các files đối tượng và thư viện tạo ra file có thể chạy đc 
  - quá trình linker tương đối phức tạp , do đó GCC thực hiện toàn bộ quá trình thay chúng ta dưới 1 câu lệnh
- - sử dụng gcc liên kết các files đối tượng và biến dịch ra file thực thi 
+ - sử dụng gcc liên kết các files đối tượng và thư viện chuẩn biến dịch ra file thực thi 
 ```bash
 ld hello.o ...libraries... -o hello.exe 
 or
@@ -58,7 +58,21 @@ gcc -c main.c
 gcc -c lib.c
 ```
  - tạo file thực thi từ nhiều files.o
- - tại bước này gcc sẽ tự động link các files.o lại với nhau và đưa ra files thực thi 
+ - tại bước này gcc sẽ tự động link các files.o lại với nhau và các thư viện chuẩn C or C++ đưa ra files thực thi 
 ```bash
 gcc main.o lib.o -o main.out 
+```
+
+ #### Setup a directory for multiple C file in the GCC 
+
+```
+root/ 
+--- main.c 
+--- lib/ 
+    --- lib.h
+    --- lib.c 
+```
+ -  You need to tell the compiler where to search for headers:
+```bash
+cc -I./lib main.c lib/aa.c lib/bb.c 
 ```
