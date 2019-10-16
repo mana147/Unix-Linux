@@ -62,9 +62,7 @@ gcc -c lib.c
 ```bash
 gcc main.o lib.o -o main.out 
 ```
-
- #### Setup a directory for multiple C file in the GCC 
-
+### Setup a directory for multiple C file in the GCC 
 ```
 root/ 
 --- main.c 
@@ -76,3 +74,12 @@ root/
 ```bash
 cc -I./lib main.c lib/aa.c lib/bb.c 
 ```
+---------------------------------------------------------------
+## Hướng dẫn sử dụng , viết Makefile biên dịch dự án cơ bản 
+
+note : GNU Make  
+```bash
+make --version  // kiểm tra phiên bản 
+```
+- GNU Make đọc Makefile và chạy các câu lệnh biên dịch sourc code .
+- Rules trong Makefile

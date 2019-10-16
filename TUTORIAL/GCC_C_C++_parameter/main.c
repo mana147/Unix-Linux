@@ -1,6 +1,15 @@
-#include "lib.h"
+#include <stdio.h>
 
-int main()
+int main (int argc , char** argv) 
 {
-    func();
+    printf ("%d \n" , argc);
+    printf ("%s \n" , argv[0]);
+
+    int i =1 ;
+    for ( i = 0; i < argc ; i++)
+    {
+        printf ("%s \n ", argv[i]);
+    }
+
+    return 0;
 }
