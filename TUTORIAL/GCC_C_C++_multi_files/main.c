@@ -1,10 +1,11 @@
-#include "lib.h"
+#include "lib/lib_in.h"
+#include "lib_out.h"
+
 int main()
 {
-   for (int i = 0; i < 10; i++)
-   { 
-      func_1(); 
-   }
-   func_2();
+   func_out_1 () ;
+   func_out_2 () ;
+   func_in_1 ();
+   func_in_2 ();
    return 0;
 }
