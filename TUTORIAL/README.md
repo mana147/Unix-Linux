@@ -85,7 +85,7 @@ make --version  // kiểm tra phiên bản
 ```
 note : 
 - GNU Make đọc Makefile và chạy các câu lệnh được viết trong đó 
-- cách thức hoạt động trong môi trường bash shell linux , khi gõ câu lệnh [make ] lập tức GNU Make đã đọc toàn bộ file makefile bạn vừa viết , khi bạn gõ 2 lần phím tab terminal sẽ hiện thị những TARGET , như vậy chỉ cần gõ chứ cái đầu và gõ tab , bash shell sẽ tự hoàng hiện câu lệnh . ví dụ trong TUTORIAL/GCC_C_C++_Makefile/Makefile .
+- cách thức hoạt động trong môi trường bash shell linux , khi gõ câu lệnh [make ] lập tức GNU Make đã đọc toàn bộ file makefile bạn vừa viết , khi bạn gõ 2 lần phím tab terminal sẽ hiện thị những TARGET , như vậy chỉ cần gõ chứ cái đầu và gõ tab , bash shell sẽ tự hoàn thiện câu lệnh . ví dụ trong TUTORIAL/GCC_C_C++_Makefile/Makefile .
 ```bash
 gõ lệnh make + double tab 
 terminal show > clear hello hello.o run 
@@ -122,3 +122,10 @@ clear:
 - khi thay đổi dự án hay môi trường pháp triển từ Win -> linux -> UNix ->Mac  , makefile cho tính cơ động và khả năng kiểm soát tốt toàn bộ quá trình . 
 
 ![alt text](https://github.com/mana147/Unix-Linux/blob/master/DOCUMENTS/makefile.png)
+
+
+Tài liệu tham khảo :
+https://www.gnu.org/software/make/manual/make.html#Overview
+https://kipalog.com/posts/GNU-make
+https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
+https://dohoangdung.wordpress.com/2017/10/03/qua-trinh-compile-bang-gcc/
