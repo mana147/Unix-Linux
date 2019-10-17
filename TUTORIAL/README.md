@@ -118,14 +118,14 @@ clear:
 - giải thích quá trình chạy : ví dụ nếu ta gõ [make hello] makefile sẽ nhảy vào target [hello ] nó sẽ kiểm tra nếu target này có file phụ thuộc đằng sau ở đây ví dụ là  [hello.o ] nó sẽ nhảy tiếp đến target [hello.o ] kiểm tra tiếp thấy có file phụ thuộc [hello.c ] nhưng nó tìm không thấy target này đâu nó sẽ thực hiên lệnh của target [hello.o ] là [ gcc -c hello.c ]  , sau đó nó qua về target [hello ] ban đầu và thực hiện lệnh của target này [gcc hello.o -o hello.out ] 
 - như vậy Makefile đã giúp quá trình thực hiện gõ lệnh biên dịch rút gọn lại chỉ bằng 1 lệnh 2 từ khóa  [make hello ]
 
-- không thể phụ nhận các trình IDE tích hợp trình soạn thảo và biên dịch trong một , chỉ cần 1 kich chúng ta đã tự động biên dịch và nạp code xuống hệ thông , quá đơn giản . nhưng như vậy chúng ta bị phụ thuộc khá nhiều vào các tool phát triển .
+- không thể phủ nhận các trình IDE tích hợp trình soạn thảo và biên dịch trong một , chỉ cần 1 kich chúng ta đã tự động biên dịch và nạp code xuống hệ thông , quá đơn giản . nhưng như vậy chúng ta bị phụ thuộc khá nhiều vào các tool phát triển .
 - khi thay đổi dự án hay môi trường pháp triển từ Win -> linux -> UNix ->Mac  , makefile cho tính cơ động và khả năng kiểm soát tốt toàn bộ quá trình . 
 
 ![alt text](https://github.com/mana147/Unix-Linux/blob/master/DOCUMENTS/makefile.png)
 
 
 Tài liệu tham khảo :
-https://www.gnu.org/software/make/manual/make.html#Overview
-https://kipalog.com/posts/GNU-make
-https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
-https://dohoangdung.wordpress.com/2017/10/03/qua-trinh-compile-bang-gcc/
+- https://www.gnu.org/software/make/manual/make.html#Overview
+- https://kipalog.com/posts/GNU-make
+- https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html
+- https://dohoangdung.wordpress.com/2017/10/03/qua-trinh-compile-bang-gcc/
