@@ -2,10 +2,10 @@ hello.o: hello.c
 	gcc -c hello.c
 
 hello: hello.o
-	gcc hello.o -o hello
+	gcc hello.o -o hello.out
 
-run: hello
-	./hello
+run:
+	./*.out
 
 clear:
 	rm *.o

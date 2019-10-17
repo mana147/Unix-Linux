@@ -2,7 +2,7 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 sudo apt-get clean
 sudo apt-get autoclean
-sudo dpkg –list
+sudo dpkg -–list // liệt kê các gói đã cài  đặt  .
 
 sudo apt-get install [package name 1] [package name 2] … [package name n]
 sudo apt-get remove [package name 1] [package name 2] … [package name n]
