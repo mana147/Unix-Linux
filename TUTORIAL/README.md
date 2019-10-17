@@ -120,3 +120,5 @@ clear:
 
 - không thể phụ nhận các trình IDE tích hợp trình soạn thảo và biên dịch trong một , chỉ cần 1 kich chúng ta đã tự động biên dịch và nạp code xuống hệ thông , quá đơn giản . nhưng như vậy chúng ta bị phụ thuộc khá nhiều vào các tool phát triển .
 - khi thay đổi dự án hay môi trường pháp triển từ Win -> linux -> UNix ->Mac  , makefile cho tính cơ động và khả năng kiểm soát tốt toàn bộ quá trình . 
+
+![alt text](https://github.com/mana147/Unix-Linux/blob/master/DOCUMENTS/makefile.png)
