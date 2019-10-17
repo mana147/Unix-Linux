@@ -75,6 +75,7 @@ root/
 ```bash
 cc -I./lib main.c lib/aa.c lib/bb.c 
 ```
+![alt text](https://github.com/mana147/Unix-Linux/blob/master/DOCUMENTS/GCC%20C_C%2B%2B%20.png)
 
 ## Hướng dẫn sử dụng , viết Makefile biên dịch dự án cơ bản 
 
