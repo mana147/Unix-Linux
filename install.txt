@@ -1,0 +1,19 @@
+sudo apt-get update
+
+sudo apt-get install xserver-xorg-input-synaptics
+
+apt-get install --only-upgrade xserver-xorg-input-libinput-hwe-18.04
+
+sudo apt install xserver-xorg-input-synaptics-hwe-18.04
+
+sudo apt install xserver-xorg-input-elantech-hwe-18.04
+
+elantech
+
+xinput list
+
+apt list --installed
+
+sudo apt-get install --install-recommends linux-generic-hwe-18.04 xserver-xorg-hwe-18.04
+
+sudo apt-get install xserver-xorg-input-libinput-hwe-18.04 libinput-tools xorg-input-abi-24
