@@ -20,6 +20,8 @@ Unix/Linux (Tutorial / example / code / demo / ... )
 - sudo dpkg –-list : kiểm tra những ứng dụng nào đã cài đặt
 - sudo dpkg –-list | less : 
 - sudo chown 777 name.file // phân quyền trên linux
+- sudo chmod -R 777 /var/www
+- sudo chmod -R 644 /var/www
 - tar -vxf file_name // giải nén
 - rm -rf mydir // remove a full directory
 - tree // hiển thị cây thư mục tại vị chí hiện tại
