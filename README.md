@@ -9,6 +9,5 @@ TODO : Unix/Linux (Tutorial / example / code / demo / ... )
 ##### TUTORIAL GNU GCC C/C++ FOR LINUX ( Các bài hướng dẫn từ cơ bản đến nâng cao ... )
 ##### TUTORIAL GNU GCC C/C++ FOR ARM ( lập trình stm32 trên linux )
 ##### TUTORIAL GIT/GITHUB (hướng dẫn git)
-
-
-django-admin startproject webserver
+  
+git pull && python3 manage.py runserver 0.0.0.0:8080
