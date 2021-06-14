@@ -1,4 +1,7 @@
-grep -E "^deb https://community-packages.deepin.com/printer eagle non-free" /etc/apt/sources.list.d/printer.list > /dev/null && echo -e "\nLa configuración debe repararse.\n" || echo -e "\nLa configuración está bien.\n"
+> sudo deepin-editor /etc/hosts
 
-echo "deb http://packages.chinauos.com/printer eagle non-free" | sudo tee /etc/apt/sources.list.d/printer.list
+You need to replace the faulty line with
 
+> deb https://cdn-package-store6.deepin.com/appstore/ eagle appstore
+
+in /etc/apt/sources.list.d/appstore.list
