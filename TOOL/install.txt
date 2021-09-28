@@ -17,3 +17,50 @@ apt list --installed
 sudo apt-get install --install-recommends linux-generic-hwe-18.04 xserver-xorg-hwe-18.04
 
 sudo apt-get install xserver-xorg-input-libinput-hwe-18.04 libinput-tools xorg-input-abi-24
+
+
+{
+    "workbench.iconTheme": "material-icon-theme",
+    
+    "editor.mouseWheelZoom": true,
+    "editor.suggestSelection": "first",
+    "editor.fontSize": 19,
+ 
+    // "editor.lineNumbers": "relative",
+    "editor.renderLineHighlight": "all",
+    "editor.lineHeight": 30,
+
+    "editor.cursorBlinking": "phase",
+    // "editor.wordWrap": "on",
+    "window.menuBarVisibility": "toggle",
+    // "editor.tabCompletion": "on",
+    
+
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+    "npm-intellisense.scanDevDependencies": true,
+    "npm-intellisense.importES6": false,
+    "npm-intellisense.importQuotes": "'",
+    "npm-intellisense.importLinebreak": ";\r\n",
+    "npm-intellisense.importDeclarationType": "const",
+    
+    // "files.autoSave": "afterDelay",
+    "liveServer.settings.donotShowInfoMsg": true,
+
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.fontSize": 16,
+    "git.confirmSync": false,
+    "workbench.colorCustomizations": {
+        // "tab.activeBackground": "#1a1a1a",
+        // "activityBar.background": "#1a1a1a",
+        // "sideBar.background": "#1a1a1a",
+        "[One Dark Pro]":  {
+          "editor.background": "#1a1a1a",
+        }
+    },
+    "workbench.colorTheme": "Bearded Theme Arc Blueberry",
+    "window.zoomLevel": -1
+    // "path-intellisense.extensionOnImport": true,
+}
