@@ -2,7 +2,7 @@
 
 note : hướng dẫn biên dịch và giải thích quá trình biên dịch Source code 
 
-![alt text](https://github.com/mana147/Unix-Linux/blob/master/DOCUMENTS/Complie.png)
+![alt text](https://github.com/mana147/Unix-Linux/blob/master/TUTORIAL_LINUX_C_C++/img/Complie.png)
 
 ## Compilation process multi files and parameter in program
 ### GCC compilation process 
@@ -75,7 +75,7 @@ root/
 ```bash
 cc -I./lib main.c lib/aa.c lib/bb.c 
 ```
-![alt text](https://github.com/mana147/Unix-Linux/blob/master/DOCUMENTS/GCC%20C_C%2B%2B%20.png)
+![alt text](https://github.com/mana147/Unix-Linux/blob/master/TUTORIAL_LINUX_C_C++/img/GCC%20C_C%2B%2B%20.png)
 
 ## Hướng dẫn sử dụng , viết Makefile biên dịch dự án cơ bản 
 
@@ -121,7 +121,7 @@ clear:
 - không thể phủ nhận các trình IDE tích hợp trình soạn thảo và biên dịch trong một , chỉ cần 1 kich chúng ta đã tự động biên dịch và nạp code xuống hệ thông , quá đơn giản . nhưng như vậy chúng ta bị phụ thuộc khá nhiều vào các tool phát triển .
 - khi thay đổi dự án hay môi trường pháp triển từ Win -> linux -> UNix ->Mac  , makefile cho tính cơ động và khả năng kiểm soát tốt toàn bộ quá trình . 
 
-![alt text](https://github.com/mana147/Unix-Linux/blob/master/DOCUMENTS/makefile.png)
+![alt text](https://github.com/mana147/Unix-Linux/blob/master/TUTORIAL_LINUX_C_C++/img/makefile.png)
 
 
 Tài liệu tham khảo :

@@ -1,5 +1,4 @@
-# Unix-Linux
-Unix/Linux (Tutorial / example / code / demo / ... )
+# các lệnh linux thường dùng
 
 - apt-get dist-upgrade
 - apt-get clean
