@@ -27,3 +27,44 @@
 - command > output.txt 
 - SomeCommand >> SomeFile.txt  // nối thêm dữ liệu 
 
+
+1. List out all connections 
+$ netstat -a : 
+
+2. List only TCP or UDP connections
+$ netstat -at : To list out only tcp connections use the t options.
+$ netstat -au : Similarly to list out only udp connections use the u option.
+
+3. Disable reverse dns lookup for faster output
+$ netstat -ant : 
+
+4. List out only listening connections
+$ netstat -tnl
+
+5. Get process name/pid and user id
+$ sudo netstat -nlpt
+$ sudo netstat -ltpe
+
+6. Print statistics
+$ netstat -s
+
+7. Display kernel routing information
+$ netstat -rn
+
+8. Print network interfaces
+$ netstat -i
+$ netstat -ie
+
+9. Get netstat output continuously
+$ netstat -ct
+
+10. Display multicast group information
+$ netstat -g
+$ netstat -atnp | grep ESTA : Print active connections
+
+$ watch -d -n0 "netstat -atnp | grep ESTA"
+
+$ sudo netstat -aple | grep ntp : Check if a service is running
+
+Rsync : rsync -a ~/dir1 username@remote_host:destination_directory
+
